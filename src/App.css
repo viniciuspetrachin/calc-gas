@@ -1,0 +1,107 @@
+/* Importação da fonte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Aplicação principal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Aplicação principal */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Cabeçalho do aplicativo */
+.App-header {
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Grupo de entrada */
+.input-group {
+  margin-bottom: 20px;
+}
+
+/* Rótulo de entrada */
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Campo de entrada */
+.input-group input {
+  width: calc(100% - 12px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+/* Efeito hover no campo de entrada */
+.input-group input:focus {
+  border-color: #007bff;
+}
+
+/* Resultado */
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .App-header h1 {
+    font-size: 20px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  .result {
+    font-size: 18px;
+  }
+}
